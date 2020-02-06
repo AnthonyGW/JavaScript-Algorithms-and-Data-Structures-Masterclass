@@ -1,0 +1,18 @@
+The Frequency Counter solution pattern can be used when there is a need to record
+and refer to the frequencies of elements of an iterable array (or a stream chunk)
+for a certain computation. The data to be computed does not need to be ordered,
+we usually parse over all of it in this approach.
+e.g. find the subsequence that has most/least repeated elements.
+Method: Iterate over the entire array and store in an object the frequency of elements that occur
+
+The Multiple Pointers solution pattern can be used when the data to perform a computation on
+is ordered and iterable. It can be used to solve problems where the computation requires
+the comparison of one or more elements in an array from ascending to descending order or vice versa,
+or even from within to without and vice versa.
+e.g return two or more elements of an array that compute to give a certain result.
+Method: Create one or more pointers and use a loop to move their position up/down the array from a given starting position.
+
+The Sliding Window pattern can be used on any iterable array when there is a need to perform
+a computation on a chunk of data and compare the solution against another chunk of data.
+e.g get the largest sum of a given subsequence length in an array
+Method: Create a window of a certain size and move it across the entire array, growing or shrinking it as needed.
